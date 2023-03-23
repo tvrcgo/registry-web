@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './index.less'
+import { Link } from 'umi'
 import {
   Table
 } from 'antd'
@@ -17,8 +18,13 @@ export default () => {
           size='middle'
           bordered
           columns={[
-            { title: 'Name', key: 'name', width: '70%' },
-            { title: 'Tags', key: 'tags' },
+            { title: 'Name', key: 'name', dataIndex: 'name', width: '70%', render:(val, rec) => {
+              return (<Link to={`/repo/${val}`}>{val}</Link>)
+            } },
+            { title: 'Tags', key: 'tags', dataIndex: 'tags' },
+          ]}
+          dataSource={[
+            { name: 'tvrcgo/clash', tags: 1 }
           ]}
         />
       </div>

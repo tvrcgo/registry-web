@@ -11,6 +11,8 @@ export default defineConfig({
       layout: false,
       routes: [
         { path: '/', component: 'index' },
+        { path: '/repo/:user/:repo', component: 'repo', },
+        { path: '/repo/:user/:repo/:cat', component: 'repo', },
         { path: '/*', component: '404', },
       ],
     },
