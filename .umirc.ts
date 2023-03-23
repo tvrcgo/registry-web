@@ -1,7 +1,7 @@
 import { defineConfig } from 'umi'
 
 export default defineConfig({
-  title: 'registry-web (dev)',
+  title: 'Registry Station',
   theme: {
     'primary-color': '#004089',
   },
@@ -22,6 +22,7 @@ export default defineConfig({
     import: true
   },
   history: { type: 'hash' },
-  publicPath: '/public/',
+  manifest: {},
+  publicPath: '/',
   outputPath: 'dist'
 })
