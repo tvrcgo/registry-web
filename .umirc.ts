@@ -16,7 +16,9 @@ export default defineConfig({
     },
   ],
   layout: false,
-  antd: {},
+  antd: {
+    import: true
+  },
   history: { type: 'hash' },
   publicPath: '/public/',
   outputPath: 'dist'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Outlet, useLocation } from 'umi'
+import { useLocation } from 'umi'
 
 export default () => {
   const location = useLocation()
