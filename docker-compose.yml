@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  registry-web:
+    image: tvrcgo/registry-web:dev
+    container_name: registry-web
+    ports:
+      - 13000:3000
