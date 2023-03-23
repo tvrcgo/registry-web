@@ -24,7 +24,7 @@ export default () => {
             { title: 'Tags', key: 'tags', dataIndex: 'tags' },
           ]}
           dataSource={[
-            { name: 'tvrcgo/clash', tags: 1 }
+            { name: 'tvrcgo/clash', tags: 1, key: 1 }
           ]}
         />
       </div>
