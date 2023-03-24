@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams, Link } from 'umi'
-import styles from './repo.less'
+import styles from './index.less'
 import {
   Table
 } from 'antd'
@@ -16,7 +16,7 @@ export default () => {
     <div className={styles.page}>
       <h1>Repository</h1>
       <h2>{params.user}/{params.repo}</h2>
-      <p>category: {params.cat}</p>
+      <p>category: {params.cat}, updated at: </p>
       <div>
         <Table
           size='middle'

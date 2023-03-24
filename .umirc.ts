@@ -10,7 +10,7 @@ export default defineConfig({
       path: '/', component: '@/layouts/index',
       layout: false,
       routes: [
-        { path: '/', component: 'index' },
+        { path: '/', component: 'home' },
         { path: '/repo/:user/:repo', component: 'repo', },
         { path: '/repo/:user/:repo/:cat', component: 'repo', },
         { path: '/*', component: '404', },
