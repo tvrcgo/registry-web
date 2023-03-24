@@ -18,8 +18,10 @@ jobs:
 
       - name: Build
         run: |
-          npm install;
-          npm run build;
+          npm install
+          npm run build
+          mkdir dist/public
+          mv dist/*.(js|css|svg|png|jpg|gif) dist/public/
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
