@@ -22,7 +22,7 @@ jobs:
           npm run build
           mkdir dist/public
           mv dist/*.* dist/public/
-          mv dist/*.html dist/
+          mv dist/public/*.html dist/
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
