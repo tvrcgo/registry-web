@@ -23,6 +23,6 @@ export default defineConfig({
   },
   history: { type: 'hash' },
   manifest: {},
-  publicPath: '/',
+  publicPath: '/public/',
   outputPath: 'dist'
 })
