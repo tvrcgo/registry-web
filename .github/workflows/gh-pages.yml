@@ -18,7 +18,7 @@ jobs:
 
       - name: Build
         run: |
-          export UMI_PUBLIC_PATH=/registry-web/public
+          export UMI_PUBLIC_PATH=/registry-web/public/
           npm install
           npm run build
           mkdir dist/public
