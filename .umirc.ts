@@ -1,5 +1,7 @@
 import { defineConfig } from 'umi'
 
+const base = process.env.ROUTE_BASE || '/'
+
 export default defineConfig({
   title: 'Registry Station',
   theme: {
@@ -23,6 +25,7 @@ export default defineConfig({
   },
   history: { type: 'hash' },
   manifest: {},
-  publicPath: '/public/',
+  base: base,
+  publicPath: `${base}public/`,
   outputPath: 'dist'
 })

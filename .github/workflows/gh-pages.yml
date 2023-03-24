@@ -18,6 +18,7 @@ jobs:
 
       - name: Build
         run: |
+          export ROUTE_BASE=/registry-web/
           npm install
           npm run build
           mkdir dist/public
