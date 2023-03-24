@@ -8,6 +8,7 @@
   },
   "keywords": [],
   "author": "tvrcgo",
+  "homepage": "http://tvrcgo.github.io/registry-web",
   "devDependencies": {
     "@ant-design/icons": "^4.2.2",
     "@umijs/max": "^4"
